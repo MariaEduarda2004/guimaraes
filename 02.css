@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    min-height: 100vh !important;
+
+}
+
+#card1{
+    overflow: hidden !important;
+}
+
+img{
+    transform-origin:center center ;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

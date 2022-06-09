@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="zoom.css">
+    <link rel="stylesheet" href="style07.css">
+    
+
+</head>
+<body>
+    <div class="container shadow-lg m-5">
+        <div class="row offset-2">
+            <a href="cartaz.html">
+                <h1>CINEMIX</h1>
+            </a>
+            <div class="col-4 pt-5 pb-5" id="card1">
+                <picture>
+                    <img width="200px" height="300px"  src="minion.png" alt="" srcset="">
+                </picture>
+            </div>
+            <div class="col-4 pt-5 pb-5">
+                <h3>
+                    Minions
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos iste ipsam officia maiores dolore ab, labore delectus, alias, odio quam dolores maxime minima dicta velit cum sequi excepturi dolorum?
+                </p>
+                <h3>
+                    10,00
+                </h3>
+                <div align="center">
+                    <br>
+                    Minions<strong>R$ 10,00</strong><br>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd6">
+                    <button type="button" id="adicionar6" id="produto6" onclick="AddCarrinho('minions', document.getElementById('qtd6').value, '10.00', 6)"> Comprar </button>
+                </div>
+                <button class="btn btn-outline-primary mt-1 offset-3" style="text-align: center;">
+                          
+                    <a   style="text-decoration:0px; "  href="cartaz.html"> Inicial </a>
+                
+            </button>
+        
+                        
+                <script>
+                    function AddCarrinho(produto, qtd, valor, posicao)
+                    {
+                        localStorage.setItem("produto" + posicao, produto);
+                        localStorage.setItem("qtd" + posicao, qtd);
+                        valor = valor * qtd;
+                        localStorage.setItem("valor" + posicao, valor);
+                        alert("Produto adicionado ao carrinho!");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script044.js"></script>
+</html>

@@ -1,0 +1,9 @@
+div.container{
+  margin-top: 300px;
+} 
+body{
+  background-color: #404040;
+}
+div.shadow{
+  background-color: #8C8C8C !important;
+}
